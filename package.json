@@ -1,0 +1,39 @@
+{
+  "name": "queryl",
+  "version": "1.0.0",
+  "description": "Query language to perform complex object searches",
+  "main": "lib/queryl.js",
+  "homepage": "https://github.com/issuetrackapp/queryl",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/issuetrackapp/queryl.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "prepublish": "gulp test",
+    "readme": "jsdoc2md --template doc/README.hbs lib/{,**/}*.js > README.md"
+  },
+  "keywords": [
+    "query",
+    "object",
+    "javascript",
+    "json",
+    "search"
+  ],
+  "author": "Juan Cruz Viotti <jviottidc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
+    "jsdoc-to-markdown": "^1.1.1",
+    "jshint-stylish": "^2.0.1",
+    "mochainon": "^1.0.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
